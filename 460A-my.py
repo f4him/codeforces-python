@@ -12,7 +12,7 @@ def day_counter(socks,day):
     days=0
     days+= socks    
     if (math.floor(socks/day)) >= day:
-        days+=day_counter(math.ceil(socks/day),day)
+        days+=day_counter(math.floor(socks/day),day)
     else:
         days+=math.floor(socks/day)
         
